@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+span{
+  font-size: 25px;
+  color: #ffff;
+  background-color: #2881DB;
+  padding: 10px;
+
+}
+div{
+  font-size: 25px;
+  color: #ffff;
+  background-color: #2881DB;
+  padding: 50px;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#continue").click(function(){
+    window.location.href='/server.js';
+  });
+});
+</script>
+<body>
+<span>Welcome : <%= profileData.name %> Your profile is Completed following is your details<br></span>
+<div>
+            Email:     <%= profileData.email %><br>
+            Phone:    <%= profileData.phone %><br>
+            Education:    <%= profileData.education %><br>
+            AOI:          <%= profileData.aoi %><br>
+
+<div>
+<button class="w3-btn w3-blue" id="continue">To Complete Article</button></p>
+</body>
+</html>

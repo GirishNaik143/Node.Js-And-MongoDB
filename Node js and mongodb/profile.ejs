@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src = "login.js" type="text/javascript"></script>
+</head>
+<style>
+span{
+  font-size: 35px;
+  color: #ffff;
+  background-color: #2881DB;
+  padding: 10px;
+
+}
+</style>
+<script>
+</script>
+<body>
+
+<span>Hello <%= loginData.name %> ! Complete your profile
+  </span>
+  <input type="hidden" name="name" value=<%= loginData.name %> id ="name">
+  <input type="hidden" name="pass" value=<%= loginData.pass %> id = "pass">
+  <p>
+    <label class="w3-text-blue"><b>Email</b></label>
+    <input class="w3-input w3-border" name="email" type="text" id ="email"></p>
+    <p>
+    <label class="w3-text-blue" id = "pass"><b>Mobile Number</b></label>
+    <input class="w3-input w3-border" name="phone" type="text" id ="phone"></p>
+    <p>
+      <p>
+      <label class="w3-text-blue" id = "pass"><b>Education</b></label>
+      <input class="w3-input w3-border" name="education" type="text" id ="education"></p>
+
+      <p>
+      <label class="w3-text-blue" id = "pass"><b>Area of Intrest</b></label>
+      <input class="w3-input w3-border" name="aoi" type="text" id ="aoi"></p>
+      <p>
+    <button class="w3-btn w3-blue" id="saveBtn">Save</button></p>
+
+</body>
+</html>

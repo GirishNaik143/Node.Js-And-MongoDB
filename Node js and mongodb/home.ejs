@@ -1,0 +1,48 @@
+<html>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src = "login.js" type="text/javascript"></script>
+
+<body class="w3-container w3-margin">
+  <h2 class="w3-text-blue">Welcome to Article Site......</h2>
+  
+  
+<h3><a class="btn btn-secondary" href="/author"><i class="fa fa-plus"></i></a> Article List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Article</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+   {{#each list}}     
+	 <td>{{this.Article}}</td>
+	{{/each}}
+       </tr>
+         
+    </tbody>
+</table>
+  
+  
+  <div  id = "mainDiv">
+  <div id="regDiv">
+  
+  <button class="w3-btn w3-blue" id="regBtn">New User Register</button></p>
+</div>
+<div id="loginDiv">
+  <button class="w3-btn w3-blue" id ="loginBtn">Login</button></p>
+</div>
+<div id="dataDiv"></div>
+</div>
+<body>
+</html>
